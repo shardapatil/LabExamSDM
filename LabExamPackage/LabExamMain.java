@@ -13,8 +13,11 @@ public class LabExamMain {
 	        String name = scanner.nextLine();
 	        System.out.println("Welcome, " + name + "!");
 	        
-	       
-	        
+	        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	        Date currentDate = new Date();
+	        System.out.println("Current Date and Time: " + sdf.format(currentDate));
+
+	    
 	        scanner.close();
 	}
 }
